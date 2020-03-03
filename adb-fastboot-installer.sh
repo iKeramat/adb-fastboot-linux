@@ -4,7 +4,7 @@ sudo apt-get install android-tools-adb android-tools-fastboot libncurses5:i386 l
 echo "*** Downloading rules..."
 wget https://raw.githubusercontent.com/iKeramat/adb-fastboot-linux/master/51-android.rules
 echo "*** Setting permissions..."
-mv 51-android.rules /etc/udev/rules.d
+sudo mv 51-android.rules /etc/udev/rules.d
 chmod a+r /etc/udev/rules.d/51-android.rules
 sudo udevadm control --reload-rules
 sudo addgroup --system plugdev
