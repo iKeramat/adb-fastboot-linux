@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "*** Install required packages..."
+sudo apt-get update
 sudo apt-get install android-tools-adb android-tools-fastboot libncurses5:i386 libstdc++6:i386 zlib1g:i386
 echo "*** Downloading rules..."
 wget https://raw.githubusercontent.com/iKeramat/adb-fastboot-linux/master/51-android.rules
